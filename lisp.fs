@@ -197,7 +197,7 @@ end-struct lisp-compound
 : lisp-eval-list recursive ( lisp -- lisp )
     dup 0<> if
 	dup car lisp-eval swap cdr lisp-eval-list cons
-    endif ;    
+    endif ;
 
 : lisp-bind-var ( name value -- )
     >r dup symbol-namea @ swap symbol-nameu @ r> symtab-add ;
@@ -363,7 +363,7 @@ defer lisp-read-lisp
     car ;
 
 s" quote" string-new ' lisp-special-quote special symtab-add
-    
+
 : lisp-special-lambda ( lisp -- lisp )
     dup car swap cdr car compound ;
 
