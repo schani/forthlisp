@@ -8,6 +8,8 @@ involved parts of this interpreter is the reader, where I had to do
 quite a lot of stack juggling to keep everything in line. It doesn't
 look very involved now but I remember spending quite some time
 thinking about the stack layout for the reader routines.
+[Read here](https://news.ycombinator.com/item?id=26884231) why the
+way I did it is most certainly wrong.
 
 ## How to use it
 
